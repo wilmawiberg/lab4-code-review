@@ -8,6 +8,7 @@ import java.util.regex.PatternSyntaxException;
 
 public class SearchFile {
 
+
     private static final int REQUIRED_ARGUMENT_LENGTH = 3;
 
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class SearchFile {
         if (args.length != REQUIRED_ARGUMENT_LENGTH || !args[0].equals("search")) {
             printAndExit("Syntax error. Usage: search <pattern> <file>");
         }
+        //This program serches a file for matching arguments!
 
         String patternText = args[1];
         String filePath = args[2];
